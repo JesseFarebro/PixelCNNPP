@@ -1,0 +1,13 @@
+import dataset.cifar10
+
+train.dataset_fn = @dataset.cifar10.dataset
+train.batch_size = 32
+
+train.learning_rate = 0.0002
+train.max_epoch = 5000
+
+PixelCNNPP.residual_blocks = 3
+PixelCNNPP.residual_layers_per_block = 5
+PixelCNNPP.filters = 160
+
+PixelCNNPP.num_mixtures = 10

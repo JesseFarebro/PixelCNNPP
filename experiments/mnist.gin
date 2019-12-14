@@ -1,0 +1,11 @@
+import dataset.mnist
+
+train.dataset_fn = @dataset.mnist.dataset
+train.batch_size = 256
+train.max_epoch = 1000
+
+PixelCNNPP.residual_blocks = 3
+PixelCNNPP.residual_layers_per_block = 2
+PixelCNNPP.filters = 64
+
+PixelCNNPP.num_mixtures = 3
